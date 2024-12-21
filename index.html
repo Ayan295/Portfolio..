@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,body{
+            width: 100%;
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .body1{
+            width: 100%;
+            height: 800px;
+            background-color: rgb(222, 222, 222);
+            border-bottom-left-radius: 50px; /* Curve for bottom-left */
+            border-bottom-right-radius: 50px; /* Curve for bottom-right */
+            overflow: hidden; /* Ensures content doesn't overflow the rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        .navbar{
+            padding: 30px 60px ;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav1{
+            display: flex;
+            gap: 20px;
+            width: 250px;
+            height: 50px;
+            
+        }
+
+        .e1{
+            border: 2px solid rgb(186, 177, 177);
+            background-color: rgb(191, 188, 188);
+            border-radius: 50px;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        .copy{
+            background-color: white;
+            width: 100%;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 30px;
+            font-weight: bold;
+            
+        }
+
+        .email{
+            margin: 15px 22px;
+            font-size: 12px;
+
+        }
+
+        .cv{
+            font-weight: bold;
+            background-color: white;
+            width: 100%;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 30px;
+            border: 2px solid rgb(186, 177, 177);
+        }
+
+        .social{
+            color: rgb(59, 59, 59);
+        }
+
+        .social a{
+            text-decoration: none;
+            color: rgb(59, 59, 59);
+        }
+
+        .middle{
+            padding-top: 100px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .txt{
+            padding-top: 30px;
+            font-size: 42px;
+            
+        }
+
+        .body2{
+            margin-top: 200px;
+            width: 100%;
+            height: 800px;
+            background-color: rgb(222, 222, 222);
+            border-top-left-radius: 50px; /* Curve ftoptom-left */
+            border-top-right-radius: 50px; /* Curve fortopm-right */
+            overflow: hidden; /* Ensures content doesn't overflow the rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            
+
+        
+        }
+
+        .circle{
+            margin-left: 80px;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(186, 177, 177);
+            border-radius: 50%;
+        }
+
+        .txt1{
+            padding-top: 100px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            
+
+        }
+
+        .midtxt button{
+            border: none;
+            cursor: pointer;
+            margin-top: 40px;
+            background-color: black;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+            border-radius: 30px;
+
+        }
+
+
+
+        .line{
+            text-align: center;
+            margin-top: 80px;
+            width: 1000px;
+            height: 1px;
+            background-color: rgb(162, 160, 160);
+            margin-left: 20%;
+        }
+
+        .line button{
+            position:absolute;
+            margin: -15px ;
+            border: none;
+            padding: 10px  20px;
+            border-radius: 20px;
+            cursor: pointer;
+
+        }
+
+        .info{
+            padding: 120px 180px;
+            padding-top: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+
+        }
+
+
+        .body3{
+            position: absolute;
+            margin-top: 200px;
+            width: 100%;
+            background-color: rgb(222, 222, 222);
+            border-top-left-radius: 50px; /* Curve ftoptom-left */
+            border-top-right-radius: 50px; /* Curve fortopm-right */
+            overflow: hidden; /* Ensures content doesn't overflow the rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        .circle1{
+            margin-top: 100px;
+            margin-left: 43%;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(186, 177, 177);
+            border-radius: 50%;
+        }
+
+
+        .txt3{
+            margin-top: 20px;
+            text-align: center;
+            font-size: 22px;
+
+        }
+
+        .btn1{
+
+            text-align: center;
+            margin-top: 40px;
+            
+            
+        }
+
+        .btn1 button{
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .email1{
+            background-color: black;
+            color: white;
+            
+        }
+
+        .btn1 button:hover{
+            scale: 1.1;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+            
+        }
+
+        .line1{
+            margin-top: 120px;
+            margin-left: 11%;
+            width: 1200px;
+            height: 1px;
+            background-color: rgba(0, 0, 0, 0.196);
+        }
+
+
+        .abc{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50%;
+            font-weight: lighter;
+
+        }
+
+
+        .social1{
+            color: black;
+        }
+
+        .social1 a{
+            text-decoration: none;
+            color: black;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+    <body>
+        <div class="body1">
+            <div class="navbar">
+                <div class="nav1">
+                    <div class="e1">
+                        <div class="email">xyz@gmail.com</div>
+                        <button class="copy">Copy</button>
+                    </div>
+                    <button class="cv">CV</button>
+                </div>
+                <div class="nav2">
+                    <div class="social">
+                        <a href="#">LinkedIn</a> / 
+                        <a href="#">Behance</a> / 
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>  
+            </div>
+            <div class="middle">
+                <div class="midtxt">
+                    <div class="circle"></div>
+                    <div class="txt"><p>Building digital<br>
+                        products, brands, and <br>
+                        experience.</p>
+                    </div>
+                    <button> Latest Shots _</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="body2">
+            <div class="lowermidtxt">
+                <div class="txt1">
+                    <p>Collaborate with brands and agencies to <br>
+                        create impactful results.</p>
+                </div>
+                <div class="line">
+                    <button>Services</button>
+                </div>
+            </div>
+            <div class="info">
+                <div class="info1">
+                    <h4>UX & UI</h4><br>
+                    <p>Designing interfaces that are intuitive, efficient, and enjoyable to use.</p>
+                </div>
+                <div class="ingo2">
+                    <h4>Web & Mobile App</h4><br>
+                    <p>Transforming ideas into exceptional web and mobile app experiences.</p>
+                </div>
+                <div class="info3">
+                    <h4>Design & Creative</h4><br>
+                    <p>Crafting visually stunning designs that connect with your audience.</p>
+                </div>
+                <div class="info4">
+                    <h4>Development</h4><br>
+                    <p>Bringing your vision to life with the latest technology and design trends.</p>
+                </div>
+            </div>
+           
+            
+
+        </div>
+
+
+
+        <div class="body3">
+            <div class="circle1"></div>
+            <div class="txt3">
+                <h1>Tell me about your next project</h1> 
+            </div>
+            <div class="btn1">
+                <button class="email1">Email Me</button>
+                <button class="WhatsApp">WhatsApp</button>
+            </div>
+
+            <div class="line1">
+
+            </div>
+
+            <div class="abc">
+                <div class="cp">
+                    © 2024 All rights reserved.
+                </div>
+                <div class="social1">
+                    <a href="#">LinkedIn</a> / 
+                    <a href="#">Behance</a> / 
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+</body>
+</html>
